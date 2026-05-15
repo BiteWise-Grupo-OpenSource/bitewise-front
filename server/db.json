@@ -1,91 +1,44 @@
 {
-  "users": [
+  "specialists": [
     {
       "id": 1,
-      "firstName": "Carlos",
-      "lastName": "Mendoza",
-      "email": "carlos.mendoza@mail.com",
-      "password": "password123",
-      "avatarUrl": "https://api.dicebear.com/9.x/initials/svg?seed=CM",
-      "role": "user",
-      "createdAt": "2026-01-15T10:30:00Z"
+      "name": "María López",
+      "licenseNumber": "NUT-45828",
+      "yearsOfExperience": 8,
+      "email": "maria.lopez@nutricion.com",
+      "isOnline": true
     },
     {
       "id": 2,
-      "firstName": "Ana",
-      "lastName": "Gutierrez",
-      "email": "ana.gutierrez@mail.com",
-      "password": "password123",
-      "avatarUrl": "https://api.dicebear.com/9.x/initials/svg?seed=AG",
-      "role": "user",
-      "createdAt": "2026-02-20T14:00:00Z"
+      "name": "Carlos Pérez",
+      "licenseNumber": "NUT-78214",
+      "yearsOfExperience": 5,
+      "email": "carlos.perez@nutricion.com",
+      "isOnline": false
     },
     {
       "id": 3,
-      "firstName": "Luis",
-      "lastName": "Paredes",
-      "email": "luis.paredes@mail.com",
-      "password": "password123",
-      "avatarUrl": "https://api.dicebear.com/9.x/initials/svg?seed=LP",
-      "role": "nutritionist",
-      "createdAt": "2026-03-10T09:15:00Z"
-    }
-  ],
-  "health-profiles": [
-    {
-      "id": 1,
-      "userId": 1,
-      "weight": 78.5,
-      "height": 175,
-      "age": 28,
-      "gender": "male",
-      "goalId": 1,
-      "activityLevelId": 3,
-      "allergyIds": [1, 3]
+      "name": "Juanceto",
+      "licenseNumber": "897123",
+      "yearsOfExperience": 4,
+      "email": "juanceto@gmail.com",
+      "isOnline": true
     },
     {
-      "id": 2,
-      "userId": 2,
-      "weight": 62.0,
-      "height": 160,
-      "age": 24,
-      "gender": "female",
-      "goalId": 2,
-      "activityLevelId": 2,
-      "allergyIds": [2]
+      "id": 4,
+      "name": "Ana Torres",
+      "licenseNumber": "NUT-55219",
+      "yearsOfExperience": 10,
+      "email": "ana.torres@nutricion.com",
+      "isOnline": false
     },
     {
-      "id": 3,
-      "userId": 3,
-      "weight": 85.0,
-      "height": 180,
-      "age": 35,
-      "gender": "male",
-      "goalId": 3,
-      "activityLevelId": 4,
-      "allergyIds": []
+      "id": 5,
+      "name": "Luis Ramírez",
+      "licenseNumber": "NUT-99102",
+      "yearsOfExperience": 6,
+      "email": "luis.ramirez@nutricion.com",
+      "isOnline": true
     }
-  ],
-  "goals": [
-    { "id": 1, "name": "Lose Weight", "description": "Reduce body fat and achieve a healthy weight through caloric deficit.", "icon": "fitness_center" },
-    { "id": 2, "name": "Gain Muscle", "description": "Increase lean muscle mass through caloric surplus and strength training.", "icon": "sports_gymnastics" },
-    { "id": 3, "name": "Maintain Health", "description": "Keep a balanced diet to sustain current fitness and well-being.", "icon": "favorite" },
-    { "id": 4, "name": "Improve Energy", "description": "Optimize nutrition for better daily energy levels and mental clarity.", "icon": "bolt" },
-    { "id": 5, "name": "Medical Diet", "description": "Follow a diet plan tailored to specific medical conditions.", "icon": "medical_services" }
-  ],
-  "activity-levels": [
-    { "id": 1, "name": "Sedentary", "description": "Little or no exercise, desk job.", "multiplier": 1.2 },
-    { "id": 2, "name": "Lightly Active", "description": "Light exercise 1-3 days per week.", "multiplier": 1.375 },
-    { "id": 3, "name": "Moderately Active", "description": "Moderate exercise 3-5 days per week.", "multiplier": 1.55 },
-    { "id": 4, "name": "Very Active", "description": "Hard exercise 6-7 days per week.", "multiplier": 1.725 },
-    { "id": 5, "name": "Extra Active", "description": "Very hard exercise, physical job or training twice a day.", "multiplier": 1.9 }
-  ],
-  "allergies": [
-    { "id": 1, "name": "Gluten", "description": "Intolerance or allergy to gluten found in wheat, barley, and rye." },
-    { "id": 2, "name": "Lactose", "description": "Intolerance to lactose found in dairy products." },
-    { "id": 3, "name": "Nuts", "description": "Allergy to tree nuts such as almonds, walnuts, and cashews." },
-    { "id": 4, "name": "Shellfish", "description": "Allergy to crustaceans and mollusks." },
-    { "id": 5, "name": "Eggs", "description": "Allergy to chicken eggs and egg-derived products." },
-    { "id": 6, "name": "Soy", "description": "Allergy to soy-based products." }
   ]
 }

@@ -1,4 +1,8 @@
 export const environment = {
-  production: false,
-  apiUrl: 'http://localhost:3000'
+  production: true,
+  platformProviderApiBaseUrl: 'http://localhost:3000/api/v1',
+
+  platformProviderSpecialistsEndpointPath: '/specialists',
+
+  logoProviderApiBaseUrl: 'https://logo.clearbit.com/',
 };

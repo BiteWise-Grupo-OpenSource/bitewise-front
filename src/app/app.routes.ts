@@ -1,23 +1,27 @@
 import { Routes } from '@angular/router';
-import { LayoutComponent } from './shared/components/layout/layout.component';
-import { LoginPageComponent } from './features/usuarios/presentation/pages/login/login-page.component';
-import { RegisterPageComponent } from './features/usuarios/presentation/pages/register/register-page.component';
+import { Home } from './shared/presentation/views/home/home';
+
+const about = () => import('./shared/presentation/views/about/about').then((m) => m.About);
+
+const pageNotFound = () =>
+  import('./shared/presentation/views/page-not-found/page-not-found').then((m) => m.PageNotFound);
+
+const baseTitle = 'ACME Nutrition App';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path: 'login', component: LoginPageComponent },
-  { path: 'register', component: RegisterPageComponent },
+  { path: 'home', component: Home, title: `${baseTitle} - Home` },
+
+  { path: 'about', loadComponent: about, title: `${baseTitle} - About` },
+
   {
-    path: 'app',
-    component: LayoutComponent,
-    children: [
-      { path: '', redirectTo: 'usuarios', pathMatch: 'full' },
-      {
-        path: 'usuarios',
-        loadChildren: () =>
-          import('./features/usuarios/usuarios.routes').then(m => m.USUARIOS_ROUTES)
-      }
-    ]
+    path: 'specialists',
+    loadChildren: () =>
+      import('./specialist/presentation/views/specialists.routes').then(
+        (m) => m.specialistsRoutes,
+      ),
   },
-  { path: '**', redirectTo: 'login' }
+
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+
+  { path: '**', loadComponent: pageNotFound, title: `${baseTitle} - Page Not Found` },
 ];
