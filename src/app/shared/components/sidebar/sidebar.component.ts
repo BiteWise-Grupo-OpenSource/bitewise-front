@@ -96,9 +96,8 @@ interface NavItem {
 })
 export class SidebarComponent {
   navItems: NavItem[] = [
-    { icon: 'dashboard', labelKey: 'NAV.DASHBOARD', route: '/app' },
-    { icon: 'people', labelKey: 'NAV.USERS', route: '/app/usuarios' },
-    { icon: 'flag', labelKey: 'NAV.GOALS', route: '/app/usuarios/goals' },
-    { icon: 'tune', labelKey: 'NAV.PREFERENCES', route: '/app/usuarios/preferences' }
+    { icon: 'dashboard', labelKey: 'NAV.DASHBOARD', route: '/app/usuarios/dashboard' },
+    { icon: 'person', labelKey: 'NAV.PROFILE', route: '/app/usuarios/profile' },
+    { icon: 'assignment', labelKey: 'NAV.GOALS', route: '/app/usuarios/onboarding' }
   ];
 }
