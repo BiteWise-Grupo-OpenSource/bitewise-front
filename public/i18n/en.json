@@ -22,6 +22,38 @@
     "JOIN": "Join BiteWise",
     "JOIN_SUB": "Create your account and start your personalized nutrition plan"
   },
+  "ONBOARDING": {
+    "TITLE": "Let's set up your profile",
+    "SUBTITLE": "We need a few details to personalize your nutrition plan",
+    "STEP_BODY": "Body Metrics",
+    "STEP_GOAL": "Your Goal",
+    "STEP_ACTIVITY": "Activity Level",
+    "STEP_ALLERGIES": "Allergies",
+    "BODY_TITLE": "Tell us about your body",
+    "BODY_DESC": "Enter your current weight, height, age and gender so we can calculate your BMI and caloric needs.",
+    "YOUR_BMI": "Your BMI",
+    "GOAL_TITLE": "What's your goal?",
+    "GOAL_DESC": "Choose the objective that best fits your current health journey.",
+    "ACTIVITY_TITLE": "How active are you?",
+    "ACTIVITY_DESC": "Select the option that best describes your weekly physical activity.",
+    "ALLERGY_TITLE": "Any food allergies?",
+    "ALLERGY_DESC": "Select all that apply. We'll exclude these from your meal plans.",
+    "ALLERGY_SKIP": "You can skip this step if you have no allergies.",
+    "FINISH": "Complete Setup",
+    "SUCCESS": "Profile created! Welcome to BiteWise."
+  },
+  "DASHBOARD": {
+    "WELCOME": "Welcome,",
+    "YOUR_PROFILE": "Your Profile",
+    "BMI": "Body Mass Index",
+    "GOAL": "Current Goal",
+    "ACTIVITY": "Activity Level",
+    "ALLERGIES": "Your Allergies",
+    "NO_ALLERGIES": "No allergies registered",
+    "DAILY_CALORIES": "Daily Calories",
+    "EDIT_PROFILE": "Edit Profile",
+    "CALORIC_BREAKDOWN": "Caloric Breakdown"
+  },
   "USERS": {
     "TITLE": "User Management",
     "NEW": "New User",
@@ -41,8 +73,8 @@
   },
   "PROFILE": {
     "TITLE": "Health Profile",
-    "WEIGHT": "Weight (kg)",
-    "HEIGHT": "Height (cm)",
+    "WEIGHT": "Weight",
+    "HEIGHT": "Height",
     "AGE": "Age",
     "GENDER": "Gender",
     "MALE": "Male",
@@ -52,7 +84,8 @@
     "ACTIVITY_LEVEL": "Activity Level",
     "ALLERGIES": "Allergies",
     "SAVE": "Save Changes",
-    "CANCEL": "Cancel"
+    "CANCEL": "Cancel",
+    "UPDATED": "Profile updated successfully"
   },
   "COMMON": {
     "SAVE": "Save",
@@ -60,6 +93,7 @@
     "DELETE": "Delete",
     "EDIT": "Edit",
     "BACK": "Back",
+    "NEXT": "Next",
     "CONFIRM": "Confirm",
     "LOADING": "Loading...",
     "NO_DATA": "No data available",
