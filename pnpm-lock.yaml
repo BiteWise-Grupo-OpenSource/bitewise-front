@@ -41,6 +41,9 @@ importers:
       '@ngx-translate/http-loader':
         specifier: ^17.0.0
         version: 17.0.0(@angular/common@21.2.13(@angular/core@21.2.13(@angular/compiler@21.2.13)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@21.2.13(@angular/compiler@21.2.13)(rxjs@7.8.2))
+      json-server:
+        specifier: 1.0.0-beta.15
+        version: 1.0.0-beta.15
       rxjs:
         specifier: ~7.8.0
         version: 7.8.2
@@ -60,9 +63,6 @@ importers:
       jsdom:
         specifier: ^28.0.0
         version: 28.1.0
-      json-server:
-        specifier: 1.0.0-beta.15
-        version: 1.0.0-beta.15
       prettier:
         specifier: ^3.8.1
         version: 3.8.3
