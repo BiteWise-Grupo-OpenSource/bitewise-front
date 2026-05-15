@@ -1,0 +1,69 @@
+{
+  "NAV": {
+    "DASHBOARD": "Panel",
+    "PROFILE": "Mi Perfil",
+    "USERS": "Usuarios",
+    "GOALS": "Objetivos",
+    "PREFERENCES": "Preferencias",
+    "LOGOUT": "Cerrar sesión"
+  },
+  "AUTH": {
+    "LOGIN": "Iniciar sesión",
+    "REGISTER": "Registrarse",
+    "EMAIL": "Correo electrónico",
+    "PASSWORD": "Contraseña",
+    "FIRST_NAME": "Nombre",
+    "LAST_NAME": "Apellido",
+    "CONFIRM_PASSWORD": "Confirmar contraseña",
+    "NO_ACCOUNT": "¿No tienes cuenta?",
+    "HAS_ACCOUNT": "¿Ya tienes cuenta?",
+    "WELCOME": "Bienvenido de nuevo",
+    "WELCOME_SUB": "Inicia sesión para continuar tu viaje nutricional",
+    "JOIN": "Únete a BiteWise",
+    "JOIN_SUB": "Crea tu cuenta y comienza tu plan de nutrición personalizado"
+  },
+  "USERS": {
+    "TITLE": "Gestión de Usuarios",
+    "NEW": "Nuevo Usuario",
+    "EDIT": "Editar Usuario",
+    "DETAIL": "Detalle del Usuario",
+    "LIST": "Usuarios",
+    "SEARCH": "Buscar usuarios...",
+    "NAME": "Nombre",
+    "EMAIL": "Correo",
+    "GOAL": "Objetivo",
+    "ACTIVITY": "Nivel de Actividad",
+    "ACTIONS": "Acciones",
+    "DELETE_CONFIRM": "¿Estás seguro de que deseas eliminar este usuario?",
+    "CREATED": "Usuario creado exitosamente",
+    "UPDATED": "Usuario actualizado exitosamente",
+    "DELETED": "Usuario eliminado exitosamente"
+  },
+  "PROFILE": {
+    "TITLE": "Perfil de Salud",
+    "WEIGHT": "Peso (kg)",
+    "HEIGHT": "Altura (cm)",
+    "AGE": "Edad",
+    "GENDER": "Género",
+    "MALE": "Masculino",
+    "FEMALE": "Femenino",
+    "OTHER": "Otro",
+    "GOAL": "Objetivo de Salud",
+    "ACTIVITY_LEVEL": "Nivel de Actividad",
+    "ALLERGIES": "Alergias",
+    "SAVE": "Guardar Cambios",
+    "CANCEL": "Cancelar"
+  },
+  "COMMON": {
+    "SAVE": "Guardar",
+    "CANCEL": "Cancelar",
+    "DELETE": "Eliminar",
+    "EDIT": "Editar",
+    "BACK": "Volver",
+    "CONFIRM": "Confirmar",
+    "LOADING": "Cargando...",
+    "NO_DATA": "No hay datos disponibles",
+    "ERROR": "Ocurrió un error",
+    "SUCCESS": "Operación exitosa"
+  }
+}
