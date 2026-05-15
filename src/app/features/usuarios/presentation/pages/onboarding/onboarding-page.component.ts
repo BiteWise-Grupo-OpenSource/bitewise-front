@@ -117,7 +117,7 @@ import {
                     [class.goal-card--selected]="goalForm.get('goalId')?.value === goal.id"
                     (click)="selectGoal(goal.id)">
                     <mat-icon class="goal-card__icon">{{ goal.icon }}</mat-icon>
-                    <h3 class="goal-card__name">{{ goal.name }}</h3>
+                    <h3 class="goal-card__name">{{ getTransKey(goal.name) | translate }}</h3>
                     <p class="goal-card__desc">{{ goal.description }}</p>
                   </div>
                 }
@@ -154,7 +154,7 @@ import {
                     [class.activity-card--selected]="activityForm.get('activityLevelId')?.value === level.id"
                     (click)="selectActivity(level.id)">
                     <div class="activity-card__info">
-                      <h3 class="activity-card__name">{{ level.name }}</h3>
+                      <h3 class="activity-card__name">{{ getTransKey(level.name) | translate }}</h3>
                       <p class="activity-card__desc">{{ level.description }}</p>
                     </div>
                     <div class="activity-card__multiplier">x{{ level.multiplier }}</div>
@@ -192,7 +192,7 @@ import {
                   [class.allergy-chip--selected]="selectedAllergyIds.includes(allergy.id)"
                   (click)="toggleAllergy(allergy.id)">
                   <mat-icon>{{ selectedAllergyIds.includes(allergy.id) ? 'check_circle' : 'radio_button_unchecked' }}</mat-icon>
-                  <span>{{ allergy.name }}</span>
+                  <span>{{ getTransKey(allergy.name) | translate }}</span>
                 </div>
               }
             </div>
@@ -521,6 +521,19 @@ export class OnboardingPageComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    const currentUser = JSON.parse(localStorage.getItem('bw_current_user') || '{}');
+    if (!currentUser.id) {
+      this.router.navigate(['/login']);
+      return;
+    }
+
+    this.profileRepo.getByUserId(currentUser.id).subscribe(profile => {
+      if (profile) {
+        this.snackBar.open('You already have a profile. Use "My Profile" to edit it.', 'OK', { duration: 3000 });
+        this.router.navigate(['/app/usuarios/dashboard']);
+      }
+    });
+
     this.bodyForm = this.fb.group({
       weight: [null, [Validators.required, Validators.min(30), Validators.max(300)]],
       height: [null, [Validators.required, Validators.min(100), Validators.max(250)]],
@@ -616,5 +629,9 @@ export class OnboardingPageComponent implements OnInit {
         this.snackBar.open('Error saving profile', 'Close', { duration: 3000 });
       }
     });
+  }
+
+  getTransKey(name: string): string {
+    return 'DB.' + name.toUpperCase().replace(/ /g, '_');
   }
 }

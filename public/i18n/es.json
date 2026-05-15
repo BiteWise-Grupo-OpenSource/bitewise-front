@@ -49,10 +49,15 @@
     "GOAL": "Objetivo Actual",
     "ACTIVITY": "Nivel de Actividad",
     "ALLERGIES": "Tus Alergias",
-    "NO_ALLERGIES": "Sin alergias registradas",
+    "NO_ALLERGIES": "No hay alergias registradas",
     "DAILY_CALORIES": "Calorías Diarias",
     "EDIT_PROFILE": "Editar Perfil",
-    "CALORIC_BREAKDOWN": "Desglose Calórico"
+    "CALORIC_BREAKDOWN": "Desglose Calórico",
+    "MACROS": {
+      "PROTEIN": "Proteína",
+      "CARBS": "Carbohidratos",
+      "FATS": "Grasas"
+    }
   },
   "USERS": {
     "TITLE": "Gestión de Usuarios",
@@ -99,5 +104,23 @@
     "NO_DATA": "Sin datos disponibles",
     "ERROR": "Ocurrió un error",
     "SUCCESS": "Operación exitosa"
+  },
+  "DB": {
+    "LOSE_WEIGHT": "Perder Peso",
+    "GAIN_MUSCLE": "Ganar Músculo",
+    "MAINTAIN_HEALTH": "Mantener Salud",
+    "IMPROVE_ENERGY": "Mejorar Energía",
+    "MEDICAL_DIET": "Dieta Médica",
+    "SEDENTARY": "Sedentario",
+    "LIGHTLY_ACTIVE": "Ligeramente Activo",
+    "MODERATELY_ACTIVE": "Moderadamente Activo",
+    "VERY_ACTIVE": "Muy Activo",
+    "EXTRA_ACTIVE": "Extra Activo",
+    "GLUTEN": "Gluten",
+    "LACTOSE": "Lactosa",
+    "NUTS": "Frutos Secos",
+    "SHELLFISH": "Mariscos",
+    "EGGS": "Huevos",
+    "SOY": "Soya"
   }
 }

@@ -91,7 +91,7 @@ import {
                   <mat-select formControlName="goalId">
                     @for (goal of goals; track goal.id) {
                       <mat-option [value]="goal.id">
-                        {{ goal.name }} — {{ goal.description }}
+                        {{ getTransKey(goal.name) | translate }} — {{ goal.description }}
                       </mat-option>
                     }
                   </mat-select>
@@ -101,7 +101,7 @@ import {
                   <mat-select formControlName="activityLevelId">
                     @for (level of activityLevels; track level.id) {
                       <mat-option [value]="level.id">
-                        {{ level.name }} (x{{ level.multiplier }})
+                        {{ getTransKey(level.name) | translate }} (x{{ level.multiplier }})
                       </mat-option>
                     }
                   </mat-select>
@@ -124,7 +124,7 @@ import {
                   <mat-checkbox
                     [checked]="selectedAllergyIds.includes(allergy.id)"
                     (change)="toggleAllergy(allergy.id)">
-                    {{ allergy.name }}
+                    {{ getTransKey(allergy.name) | translate }}
                   </mat-checkbox>
                 }
               </div>
@@ -229,4 +229,8 @@ export class ProfileEditPageComponent implements OnInit {
   }
 
   goBack(): void { this.router.navigate(['/app/usuarios/dashboard']); }
+
+  getTransKey(name: string): string {
+    return 'DB.' + name.toUpperCase().replace(/ /g, '_');
+  }
 }

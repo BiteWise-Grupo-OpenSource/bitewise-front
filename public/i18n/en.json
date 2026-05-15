@@ -52,7 +52,12 @@
     "NO_ALLERGIES": "No allergies registered",
     "DAILY_CALORIES": "Daily Calories",
     "EDIT_PROFILE": "Edit Profile",
-    "CALORIC_BREAKDOWN": "Caloric Breakdown"
+    "CALORIC_BREAKDOWN": "Caloric Breakdown",
+    "MACROS": {
+      "PROTEIN": "Protein",
+      "CARBS": "Carbohydrates",
+      "FATS": "Fats"
+    }
   },
   "USERS": {
     "TITLE": "User Management",
@@ -99,5 +104,23 @@
     "NO_DATA": "No data available",
     "ERROR": "An error occurred",
     "SUCCESS": "Operation successful"
+  },
+  "DB": {
+    "LOSE_WEIGHT": "Lose Weight",
+    "GAIN_MUSCLE": "Gain Muscle",
+    "MAINTAIN_HEALTH": "Maintain Health",
+    "IMPROVE_ENERGY": "Improve Energy",
+    "MEDICAL_DIET": "Medical Diet",
+    "SEDENTARY": "Sedentary",
+    "LIGHTLY_ACTIVE": "Lightly Active",
+    "MODERATELY_ACTIVE": "Moderadamente Active",
+    "VERY_ACTIVE": "Very Active",
+    "EXTRA_ACTIVE": "Extra Active",
+    "GLUTEN": "Gluten",
+    "LACTOSE": "Lactose",
+    "NUTS": "Nuts",
+    "SHELLFISH": "Shellfish",
+    "EGGS": "Eggs",
+    "SOY": "Soy"
   }
 }

@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "firstName": "Carlos",
       "lastName": "Mendoza",
       "email": "carlos.mendoza@mail.com",
@@ -11,7 +11,7 @@
       "createdAt": "2026-01-15T10:30:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "firstName": "Ana",
       "lastName": "Gutierrez",
       "email": "ana.gutierrez@mail.com",
@@ -21,7 +21,7 @@
       "createdAt": "2026-02-20T14:00:00Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "firstName": "Luis",
       "lastName": "Paredes",
       "email": "luis.paredes@mail.com",
@@ -33,59 +33,168 @@
   ],
   "health-profiles": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 1,
-      "weight": 78.5,
-      "height": 175,
-      "age": 28,
+      "weight": 85,
+      "height": 169,
+      "age": 20,
       "gender": "male",
-      "goalId": 1,
-      "activityLevelId": 3,
-      "allergyIds": [1, 3]
+      "goalId": "1",
+      "activityLevelId": "1",
+      "allergyIds": [
+        1,
+        3,
+        "1"
+      ]
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 2,
-      "weight": 62.0,
+      "weight": 62,
       "height": 160,
       "age": 24,
       "gender": "female",
       "goalId": 2,
       "activityLevelId": 2,
-      "allergyIds": [2]
+      "allergyIds": [
+        2
+      ]
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 3,
-      "weight": 85.0,
+      "weight": 85,
       "height": 180,
       "age": 35,
       "gender": "male",
       "goalId": 3,
       "activityLevelId": 4,
       "allergyIds": []
+    },
+    {
+      "userId": "1",
+      "weight": 80,
+      "height": 167,
+      "age": 20,
+      "gender": "male",
+      "goalId": "1",
+      "activityLevelId": "1",
+      "allergyIds": [
+        "2",
+        "3"
+      ],
+      "id": "I169AKEhBbA"
+    },
+    {
+      "userId": "1",
+      "weight": 85,
+      "height": 167,
+      "age": 20,
+      "gender": "male",
+      "goalId": "1",
+      "activityLevelId": "1",
+      "allergyIds": [
+        "4",
+        "1"
+      ],
+      "id": "38NVvPALF54"
     }
   ],
   "goals": [
-    { "id": 1, "name": "Lose Weight", "description": "Reduce body fat and achieve a healthy weight through caloric deficit.", "icon": "fitness_center" },
-    { "id": 2, "name": "Gain Muscle", "description": "Increase lean muscle mass through caloric surplus and strength training.", "icon": "sports_gymnastics" },
-    { "id": 3, "name": "Maintain Health", "description": "Keep a balanced diet to sustain current fitness and well-being.", "icon": "favorite" },
-    { "id": 4, "name": "Improve Energy", "description": "Optimize nutrition for better daily energy levels and mental clarity.", "icon": "bolt" },
-    { "id": 5, "name": "Medical Diet", "description": "Follow a diet plan tailored to specific medical conditions.", "icon": "medical_services" }
+    {
+      "id": "1",
+      "name": "Lose Weight",
+      "description": "Reduce body fat and achieve a healthy weight through caloric deficit.",
+      "icon": "fitness_center"
+    },
+    {
+      "id": "2",
+      "name": "Gain Muscle",
+      "description": "Increase lean muscle mass through caloric surplus and strength training.",
+      "icon": "sports_gymnastics"
+    },
+    {
+      "id": "3",
+      "name": "Maintain Health",
+      "description": "Keep a balanced diet to sustain current fitness and well-being.",
+      "icon": "favorite"
+    },
+    {
+      "id": "4",
+      "name": "Improve Energy",
+      "description": "Optimize nutrition for better daily energy levels and mental clarity.",
+      "icon": "bolt"
+    },
+    {
+      "id": "5",
+      "name": "Medical Diet",
+      "description": "Follow a diet plan tailored to specific medical conditions.",
+      "icon": "medical_services"
+    }
   ],
   "activity-levels": [
-    { "id": 1, "name": "Sedentary", "description": "Little or no exercise, desk job.", "multiplier": 1.2 },
-    { "id": 2, "name": "Lightly Active", "description": "Light exercise 1-3 days per week.", "multiplier": 1.375 },
-    { "id": 3, "name": "Moderately Active", "description": "Moderate exercise 3-5 days per week.", "multiplier": 1.55 },
-    { "id": 4, "name": "Very Active", "description": "Hard exercise 6-7 days per week.", "multiplier": 1.725 },
-    { "id": 5, "name": "Extra Active", "description": "Very hard exercise, physical job or training twice a day.", "multiplier": 1.9 }
+    {
+      "id": "1",
+      "name": "Sedentary",
+      "description": "Little or no exercise, desk job.",
+      "multiplier": 1.2
+    },
+    {
+      "id": "2",
+      "name": "Lightly Active",
+      "description": "Light exercise 1-3 days per week.",
+      "multiplier": 1.375
+    },
+    {
+      "id": "3",
+      "name": "Moderately Active",
+      "description": "Moderate exercise 3-5 days per week.",
+      "multiplier": 1.55
+    },
+    {
+      "id": "4",
+      "name": "Very Active",
+      "description": "Hard exercise 6-7 days per week.",
+      "multiplier": 1.725
+    },
+    {
+      "id": "5",
+      "name": "Extra Active",
+      "description": "Very hard exercise, physical job or training twice a day.",
+      "multiplier": 1.9
+    }
   ],
   "allergies": [
-    { "id": 1, "name": "Gluten", "description": "Intolerance or allergy to gluten found in wheat, barley, and rye." },
-    { "id": 2, "name": "Lactose", "description": "Intolerance to lactose found in dairy products." },
-    { "id": 3, "name": "Nuts", "description": "Allergy to tree nuts such as almonds, walnuts, and cashews." },
-    { "id": 4, "name": "Shellfish", "description": "Allergy to crustaceans and mollusks." },
-    { "id": 5, "name": "Eggs", "description": "Allergy to chicken eggs and egg-derived products." },
-    { "id": 6, "name": "Soy", "description": "Allergy to soy-based products." }
-  ]
+    {
+      "id": "1",
+      "name": "Gluten",
+      "description": "Intolerance or allergy to gluten found in wheat, barley, and rye."
+    },
+    {
+      "id": "2",
+      "name": "Lactose",
+      "description": "Intolerance to lactose found in dairy products."
+    },
+    {
+      "id": "3",
+      "name": "Nuts",
+      "description": "Allergy to tree nuts such as almonds, walnuts, and cashews."
+    },
+    {
+      "id": "4",
+      "name": "Shellfish",
+      "description": "Allergy to crustaceans and mollusks."
+    },
+    {
+      "id": "5",
+      "name": "Eggs",
+      "description": "Allergy to chicken eggs and egg-derived products."
+    },
+    {
+      "id": "6",
+      "name": "Soy",
+      "description": "Allergy to soy-based products."
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -72,7 +72,7 @@ import {
                 <div class="dash-stat-card__icon-wrap dash-stat-card__icon-wrap--goal">
                   <mat-icon>{{ goalData?.icon || 'flag' }}</mat-icon>
                 </div>
-                <span class="dash-stat-card__value dash-stat-card__value--goal">{{ goalData?.name || '—' }}</span>
+                <span class="dash-stat-card__value dash-stat-card__value--goal">{{ goalData ? (getTransKey(goalData.name) | translate) : '—' }}</span>
                 <span class="dash-stat-card__label">{{ 'DASHBOARD.GOAL' | translate }}</span>
               </mat-card-content>
             </mat-card>
@@ -83,7 +83,7 @@ import {
                 <div class="dash-stat-card__icon-wrap dash-stat-card__icon-wrap--act">
                   <mat-icon>directions_run</mat-icon>
                 </div>
-                <span class="dash-stat-card__value dash-stat-card__value--act">{{ activityData?.name || '—' }}</span>
+                <span class="dash-stat-card__value dash-stat-card__value--act">{{ activityData ? (getTransKey(activityData.name) | translate) : '—' }}</span>
                 <span class="dash-stat-card__label">{{ 'DASHBOARD.ACTIVITY' | translate }}</span>
                 <span class="dash-stat-card__sub">x{{ activityData?.multiplier || 0 }}</span>
               </mat-card-content>
@@ -138,21 +138,21 @@ import {
                 <div class="macro-list">
                   <div class="macro-item">
                     <div class="macro-item__header">
-                      <span class="macro-item__name">Protein</span>
+                      <span class="macro-item__name">{{ 'DASHBOARD.MACROS.PROTEIN' | translate }}</span>
                       <span class="macro-item__grams">{{ macros.protein }}g</span>
                     </div>
                     <mat-progress-bar mode="determinate" [value]="macros.proteinPct" color="primary" />
                   </div>
                   <div class="macro-item">
                     <div class="macro-item__header">
-                      <span class="macro-item__name">Carbohydrates</span>
+                      <span class="macro-item__name">{{ 'DASHBOARD.MACROS.CARBS' | translate }}</span>
                       <span class="macro-item__grams">{{ macros.carbs }}g</span>
                     </div>
                     <mat-progress-bar mode="determinate" [value]="macros.carbsPct" color="accent" />
                   </div>
                   <div class="macro-item">
                     <div class="macro-item__header">
-                      <span class="macro-item__name">Fats</span>
+                      <span class="macro-item__name">{{ 'DASHBOARD.MACROS.FATS' | translate }}</span>
                       <span class="macro-item__grams">{{ macros.fats }}g</span>
                     </div>
                     <mat-progress-bar mode="determinate" [value]="macros.fatsPct" color="warn" />
@@ -173,7 +173,7 @@ import {
                   @for (a of userAllergies; track a.id) {
                     <mat-chip class="dash-allergy-chip">
                       <mat-icon matChipAvatar>no_food</mat-icon>
-                      {{ a.name }}
+                      {{ 'DB.' + a.name.toUpperCase().replace(' ', '_') | translate }}
                     </mat-chip>
                   }
                 </mat-chip-set>
@@ -357,4 +357,8 @@ export class DashboardPageComponent implements OnInit {
 
   onEditProfile(): void { this.router.navigate(['/app/usuarios/profile']); }
   goToOnboarding(): void { this.router.navigate(['/app/usuarios/onboarding']); }
+
+  getTransKey(name: string): string {
+    return 'DB.' + name.toUpperCase().replace(/ /g, '_');
+  }
 }
